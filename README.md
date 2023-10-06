@@ -9,7 +9,7 @@ python3 manage.py runserver
 
 
 ### Как установить
-Для работы в файле .env нужно указать актуальные данные настроек БД. 
+
 Затем используйте `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
 
 
@@ -17,6 +17,25 @@ python3 manage.py runserver
 ```
 pip install -r requirements.txt
 ```
+
+
+
+Так же код берет настройки база данных из виртуального окружения, по этому в папке 'project' потребуется создать файл .env, и указать в нем след. параметры:
+<ul>
+  <li>DB_ENGINE='движок.базы.данных'</li>
+  <li>DB_HOST='хост'</li>
+  <li>DB_PORT=порт</li>
+  <li>DB_NAME='имя'</li>
+  <li>DB_USER='юзер'</li>
+  <li>DB_PASSWORD='пароль'</li>
+  <li>DEBUG=True or False</li>
+  <li>ALLOWED_HOSTS=['разрешенные домены']</li>
+  <li>SECRET_KEY='ключ'</li>
+</ul>
+
+
+
+
 
 ### Цель проекта
 
